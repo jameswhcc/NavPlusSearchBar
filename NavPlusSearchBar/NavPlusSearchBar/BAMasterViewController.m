@@ -33,28 +33,11 @@
     
     
     
-#warning - For UISearchBarStyleMinimal
-    
+#warning - For UISearchBarStyleProminent
     self.navigationController.navigationBar.translucent = NO;
-    
-//    BOOL t = self.searchDisplayController.searchBar.translucent;
     self.searchDisplayController.searchBar.translucent = NO;
     self.searchDisplayController.searchBar.searchBarStyle = UISearchBarStyleProminent;
-
-#warning - For UISearchBarStyleProminent
     
-    
-    self.searchDisplayController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-    
-//    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
-//    self.searchDisplayController.searchBar.barTintColor = [UIColor redColor];
-    
-    // 253, 190, 44
-//    self.searchDisplayController.searchBar.backgroundColor = [UIColor colorWithRed:253/255.f green:190/255.f blue:44/255.f alpha:1.0];
-//    UIBarStyle b1 = self.searchDisplayController.searchBar.barStyle;
-//    UISearchBarStyle b2 = self.searchDisplayController.searchBar.searchBarStyle;
-//    BOOL t2 = self.searchDisplayController.searchBar.translucent;
-//    NSLog(@"t: %d\nt2: %d", t, t2);
 }
 
 - (void)didReceiveMemoryWarning
