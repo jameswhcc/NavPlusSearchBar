@@ -34,9 +34,41 @@
     
     
 #warning - For UISearchBarStyleProminent
+///*
     self.navigationController.navigationBar.translucent = NO;
     self.searchDisplayController.searchBar.translucent = NO;
     self.searchDisplayController.searchBar.searchBarStyle = UISearchBarStyleProminent;
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    self.searchDisplayController.searchBar.backgroundColor = [UIColor redColor];
+    
+    UIView *view = self.searchDisplayController.searchBar.subviews.firstObject;
+    UIView *background = view.subviews.firstObject;
+    
+    CGRect rect = background.frame;
+    rect.size.height += 20;
+    UIView *newBackground = [[UIView alloc] initWithFrame:rect];
+    newBackground.backgroundColor= [UIColor redColor];
+    [background addSubview:newBackground];
+//*/
+#warning - For UISearchBarStyleMinimal
+/*
+ 
+    self.navigationController.navigationBar.translucent = NO;
+    self.searchDisplayController.searchBar.translucent = NO;
+    self.searchDisplayController.searchBar.backgroundColor = [UIColor grayColor];
+    self.searchDisplayController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    
+    UIView *view = self.searchDisplayController.searchBar.subviews.firstObject;
+    UIView *background = view.subviews.firstObject;
+    
+    CGRect rect = background.frame;
+    rect.size.height += 20;
+    UIView *newBackground = [[UIView alloc] initWithFrame:rect];
+    newBackground.backgroundColor= [UIColor redColor];
+    [background addSubview:newBackground];
+    
+//*/
     
 }
 
